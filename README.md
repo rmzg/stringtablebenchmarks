@@ -1,3 +1,4 @@
+```
 goos: linux
 goarch: amd64
 pkg: example.com/test/maptest
@@ -22,3 +23,4 @@ pkg: example.com/test/switchtest
 BenchmarkSwitch-48        200536              5368 ns/op
 PASS
 ok      example.com/test/switchtest     1.143s
+```
