@@ -6,8 +6,12 @@ github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dgryski/go-metro v0.0.0-20180109044635-280f6062b5bc h1:8WFBn63wegobsYAX0YjD+8suexZDga5CctH4CCTx2+8=
 github.com/dgryski/go-metro v0.0.0-20180109044635-280f6062b5bc/go.mod h1:c9O8+fpSOX1DM8cPNSkX/qsBWdkD4yd2dpciOWQjpBw=
+github.com/dgryski/go-mph v0.0.0-20200103225422-f175b8b789f6 h1:hWs0HRI7j6mrf23mojwl4MoVCr41FRb/oQg1/S+rYdM=
+github.com/dgryski/go-mph v0.0.0-20200103225422-f175b8b789f6/go.mod h1:sm2LH0eB9hET2mL0iPfQPPhbBBZgIdeJ6vA/6PfjIaQ=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/rmzg/go-mph v0.0.0-20200215071517-6ee00953891c h1:eD1LxR2yGiSK1yl5IufUhQ2bYnAz+N5gUGsZH+/LYMs=
+github.com/rmzg/go-mph v0.0.0-20200215071517-6ee00953891c/go.mod h1:yczH93InbGMNPlOrcvN2yoq8ZcArebDX53OJhpzpB7U=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.4.0 h1:2E4SXV/wtOkTonXsotYi4li6zVWxYlZuYNCXe9XRJyk=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
