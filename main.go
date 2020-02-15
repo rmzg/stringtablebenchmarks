@@ -1,11 +1,8 @@
 package main
 
 import (
-	"bytes"
 	"fmt"
 	"os"
-
-	"github.com/alecthomas/mph"
 
 	"golang.org/x/text/unicode/rangetable"
 	"golang.org/x/text/unicode/runenames"
@@ -37,7 +34,8 @@ func main() {
 	table := rangetable.Assigned("11.0.0")
 
 	dupeTest := make(map[string]bool)
-	builder := mph.Builder()
+
+	file.Write([]byte(` var Runes = map[string]rune{`))
 
 	rangetable.Visit(table, func(r rune) {
 		name := runenames.Name(r)
@@ -48,20 +46,10 @@ func main() {
 		_ = name
 		//fmt.Printf("%s = %c\n", name, r)
 		//file.Write([]byte(fmt.Sprintf("case %q: return %q\n", name, r)))
-		builder.Add([]byte(name), []byte(string(r)))
+		fmt.Fprintf(file, "%q:%q,\n", name, r)
 	})
 
-	chd, err := builder.Build()
-	if err != nil {
-		fmt.Printf("Err: %s\n", err)
-		panic(1)
-	}
-
-	buf := bytes.NewBuffer(nil)
-
-	chd.Write(buf)
-
-	fmt.Fprintf(file, "var data = %#v", buf.Bytes())
+	fmt.Fprintf(file, "}")
 
 	//file.Write([]byte(` func KV(s string) rune {
 	//`))
