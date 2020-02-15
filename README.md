@@ -2,25 +2,26 @@
 goos: linux
 goarch: amd64
 pkg: example.com/test/maptest
-BenchmarkMap-48              471           2361129 ns/op
+BenchmarkMap-48                      476           2281859 ns/op
+BenchmarkMapNoInit-48            1007122              1189 ns/op
 PASS
-ok      example.com/test/maptest        1.376s
+ok      example.com/test/maptest        3.471s
 goos: linux
 goarch: amd64
 pkg: example.com/test/mphtest
-BenchmarkCHD-48              840           1388397 ns/op
+BenchmarkCHD-48              898           1397538 ns/op
 PASS
-ok      example.com/test/mphtest        1.316s
+ok      example.com/test/mphtest        1.395s
 goos: linux
 goarch: amd64
 pkg: example.com/test/mphtest2
-BenchmarkMph2-48          992220              1208 ns/op
+BenchmarkMph2-48          986949              1219 ns/op
 PASS
-ok      example.com/test/mphtest2       1.986s
+ok      example.com/test/mphtest2       1.946s
 goos: linux
 goarch: amd64
 pkg: example.com/test/switchtest
-BenchmarkSwitch-48        200536              5368 ns/op
+BenchmarkSwitch-48        195211              5395 ns/op
 PASS
-ok      example.com/test/switchtest     1.143s
+ok      example.com/test/switchtest     1.121s
 ```
